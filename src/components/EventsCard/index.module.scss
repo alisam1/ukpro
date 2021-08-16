@@ -4,6 +4,10 @@
   background-color: transparent;
   border-bottom: 1px solid rgb(182, 182, 182);
 
+  @media (max-width: 1600px) {
+    max-width: 60rem;
+  }
+
   @media (max-width: 810px) {
     display: flex;
     width: 100%;
