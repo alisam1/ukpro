@@ -1,0 +1,132 @@
+.wrapper {
+  width: 500px;
+  min-height: 610px;
+  color: #000;
+  
+  @media (max-width: 720px){
+    width: 100%;
+    min-height: unset;
+  }
+
+  &.dark {
+    background-color: #232429;
+
+    .title, .subtitle, .poitics, .labelName, .error {
+      color: #fff;
+    }
+  }
+
+  .title {
+    padding: 30px 30px 0;
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-size: 1.6rem;
+
+    @media (max-width: 720px){
+      padding: 15px 15px 0;
+    }
+  }
+
+  .subtitle {
+    padding: 0 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    @media (max-width: 720px){
+      padding: 0 15px;
+    }
+  }
+
+  .poitics {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    width: 280px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    @media (max-width: 720px){
+      width: 100%;
+    }
+
+    .poiticsLink {
+      font-size: 0.9rem;
+      color: #d7992e;
+    }
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    width: 500px;
+      
+    @media (max-width: 720px){
+      padding: 0 15px;
+      width: 100%;
+    }
+
+    .labelName {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+
+  .inputWrapper {
+    margin-top: 20px;
+    width: 200px;
+
+    @media (max-width: 720px){
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    input {
+      padding: 11px 20px;
+      width: 200px;
+
+      @media (max-width: 720px){
+        padding: 7px 7px !important;
+        width: 100%;
+      }
+    }
+  }
+
+  .textareaWrapper {
+    margin: 20px 0 27px;
+    width: 100%;
+
+    @media (max-width: 720px){
+      margin: 10px 0 20px;
+    }
+
+    textarea {
+      padding: 15px 20px;
+      width: 100%;
+      height: 115px;
+
+      @media (max-width: 720px){
+        padding: 7px 7px !important;
+      }
+    }
+  }
+
+    button {
+      display: block;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 700;
+      background: #d7992e !important;
+      padding: 0.8rem 1.4rem !important;
+      color: #fff;
+      margin: 0 auto;
+
+      &:hover {
+        background: #d6a34ad3 !important;
+      }
+    }
+  }
+}

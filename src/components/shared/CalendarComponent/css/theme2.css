@@ -1,0 +1,118 @@
+.cld-main{
+  width: 360px;
+  min-width: 360px;
+  height: 382px;
+  padding: 30px;
+  margin-right: 40px;
+  background-color: #fff;
+}
+@media (max-width: 819px) {
+  .cld-main{
+    width: calc(100vw - 30px);
+    min-width: unset;
+    padding: 10px;
+  } 
+}
+
+.cld-main a{
+  color: #0080FF;
+}
+.cld-main svg{
+  fill: #0080FF;
+}
+  .cld-datetime{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+  }
+  .cld-datetime .today{
+    margin-right: 60px;
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .cld-nav:hover{
+    cursor: pointer;
+  }
+  .cld-nav:hover svg{
+      fill: #005EFF;
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+    /* .cld-nav svg:hover{
+
+    } */
+.cld-labels, .cld-days{
+  padding-left: 0;
+  margin: 10px 0;
+}
+  .cld-label, .cld-day{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+  }
+  .cld-day{
+    border: 1px solid rgba(235, 235, 235, 1);
+    border-collapse: collapse;
+  }
+  .cld-day.today .cld-number{
+    background: #FFA101;
+    color: #fff;
+    font-weight: 900;
+  }
+  .cld-day.disableDay{
+    opacity: 0.5;
+  }
+  .cld-day.nextMonth, .cld-day.prevMonth{
+    color: rgba(0, 0, 0, 0.445);
+  }
+    .cld-number{
+      /* position: relative; */
+      margin: 0;
+      padding: 6px 10px;
+    }
+    @media (max-width: 819px) {
+      .cld-number{
+        font-size: 0.9rem;
+      } 
+    }
+
+    #caleandar {
+      display: flex;
+    }
+    @media (max-width: 819px) {
+      #caleandar {
+        flex-direction: column;
+      } 
+    }
+    
+      /* .newsWrapper{ */
+        /* width: 620px; */
+        /* width: 100%; */
+      /* } */
+
+      .cld-number.eventday{
+        font-weight: bold;
+        background-color: rgba(167, 167, 167, 0.2);
+      }
+      .cld-number.eventday:hover{
+        cursor: pointer;
+        background-color: #a7a7a7;
+        color: #fff;
+        font-weight: 900;
+      }
+      .today .cld-number.eventday:hover{
+        background-color: #005fff;
+      }

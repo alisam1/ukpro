@@ -1,0 +1,48 @@
+.collapseWrapper {
+    width: 100%;
+    border-color: transparent !important;
+    background-color: transparent !important;
+
+
+    
+    .header {
+        border-bottom: unset !important;
+
+
+        & > div {
+            &:first-child {
+                padding: 25px 40px!important;
+                font-family: "Montserrat-Bold", Arial, sans-serif;
+                border-color: #ebebeb !important;
+                background-color: #fff !important;
+
+                &[aria-expanded="true"] {
+                    background-color: #ffa101 !important;
+                    color: #fff;
+
+                    span {
+                        transform: rotate(180deg) !important;
+                        top: 40%;
+                        right: 25px;
+                    }
+                }
+            }
+        }
+        div {
+            padding: 0;
+            border: 1px solid #ebebeb !important;
+
+            span {
+                transform: rotate(90deg) !important;
+                top: 40% !important;
+                right: 25px !important;
+            }
+        }
+    }
+
+    .content {
+        padding: 25px 40px!important;
+        border-bottom: 0.5px solid #ebebeb;
+        background-color: #ebebeb;
+    }
+}

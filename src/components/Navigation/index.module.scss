@@ -1,0 +1,47 @@
+.list{
+    list-style-type: none;
+    margin-top: 3rem;
+}
+
+.item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    color: #656565;
+    margin-bottom: 2rem;
+
+    a {
+        position: relative; 
+        &.active {
+           color: #FFA101 !important;
+           position: relative;
+
+           &::before {
+                display: block;
+                content: "";
+                position: absolute;
+                background-image: url('../../images/plus_active.svg');
+                width: 1rem;
+                height: 1rem;
+                left: -1.7rem;
+                top: 0.1rem;
+            }
+        }
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            background-image: url('../../images/plus_icon.svg');
+            width: 1rem;
+            height: 1rem;
+            left: -1.7rem;
+            top: 0.1rem;
+        }
+    }
+}
+
+.active {
+    color: #FFA101;
+}

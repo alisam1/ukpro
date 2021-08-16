@@ -1,0 +1,197 @@
+.wrapper {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 40.94px 5.06px rgba(3, 7, 8, 0.08);
+  background-color: #000;
+
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 140px;
+    box-sizing: border-box;
+
+    @media (max-width: 1200px){
+      padding: 0 70px 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 0 30px 10px;
+    }
+
+    @media screen and (max-width: 640px) {
+      padding: 0 15px 0 10px;
+    }
+
+    .content {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      transition: all 300ms;
+
+      &.minified {
+        height: 85px;
+
+        @media screen and (max-width: 1200px) {
+          height: 55px;
+        }
+      }
+
+      // .logo {
+      //   width: 150px;
+      //   height: 130px;
+      //   // @media (max-width: 1200px) {
+      //   //   position: absolute;
+      //   //   left: 50%;
+      //   //   transform: translateX(-50%) scale(70%);
+      //   //   // margin-left: -60px;
+      //   // }
+      // }
+    
+      .centerBlock {   
+
+        .link {
+          display: inline;
+          padding: 0 20px 8px;
+          border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+          font-size: 1.05rem;
+          font-weight: 900;
+          color: #fff;
+          list-style-type: none;
+
+          &:first-child {
+            padding: 0 20px 8px 0;
+          }
+          &:last-child {
+            padding: 0 0 8px 20px;
+          }
+
+          &:hover {
+            border-bottom: 1.5px solid #fff;
+            a {
+              color: #fff;
+            }
+          }
+
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
+          
+        }
+      }
+      
+      .rightBlock {
+        display: flex;
+        align-items: center;
+
+        .number {
+          color: #fff;
+          font-size: 1.45rem;
+          font-weight: 900;
+
+          &:hover {
+            color: #fff;
+          }
+
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
+        }
+
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 20px;
+          padding: 15px 20px;
+          border: 1px solid #ff9f33;
+          background-color: #ff9f33;
+          font-size: 20px;
+          font-weight: 700;
+          color: #fff;
+          white-space: nowrap;
+          transition: all 300ms;
+          cursor: pointer;
+
+
+          .phoneIcon{
+            transform: translateX(50%);
+            width: 47%;
+            filter: invert(1);
+          }
+        
+          &:hover {
+            background-color: rgb(68, 67, 67);
+          }
+        
+          @media (max-width: 1200px) {
+            padding: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+          }
+        
+          @media (max-width: 768px) {
+            width: 43px;
+            height: 43px;
+          }
+        }
+      
+        @media (max-width: 1200px) {
+          display: flex;
+          justify-content: flex-end;
+          width: 50%;
+        }
+      }
+
+      .menuIcon {
+        // position: absolute;
+        // left: 12px;
+        font-size: 60px;
+        transition: all 200ms;
+        cursor: pointer;
+      
+        span {
+          display: block;
+          margin-bottom: 5px;
+          transform-origin: left;
+          width: 24px;
+          height: 2px;
+          background-color: #fff;
+          transition: all 200ms;
+        }
+      
+        &.opened {
+          z-index: 3000;
+          transform: scale(1.3);
+      
+          span {
+            background-color: #171717;
+      
+            &:nth-child(1) {
+              transform: rotate(45deg) translateY(-2px);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            &:nth-child(3) {
+              transform: rotate(-45deg) translateY(2px);
+            }
+          }
+        }
+      
+        // @media screen and (min-width: 1200px) {
+        //   display: none;
+        // }
+      }
+
+      @media screen and (max-width: 1200px) {
+        height: 70px;
+        transition: all 400ms;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0px 30px 0 0;
+  padding-top: 9px;
+  // width: 390px !important;
+  overflow: visible;
+  color: #fff;
+  transition: all 300ms;
+
+  .dotsWrapper {
+    position: absolute;
+    top: 0;
+    left: 105px;
+
+    @media (max-width: 450px){
+      left: 50px;
+    }
+  }
+
+  .numberWrapper {
+    min-width: 170px;
+    max-width: 170px;
+    height: 100px;
+
+    @media (max-width: 450px){
+      min-width: 100px;
+      height: 80px;
+    }
+
+    &.one {
+      background-image: linear-gradient(270deg, transparent 60%, #b94507 40%);
+    }
+    &.two {
+      background-image: linear-gradient(270deg, transparent 60%, #ab2d06 40%);
+    }
+    &.three {
+      background-image: linear-gradient(270deg, transparent 60%, #8e011f 40%);
+    }
+
+    .number {
+      font-family: "Montserrat-Black", Arial, sans-serif;
+      font-size: 7.5rem;
+      line-height: 6rem;
+
+      @media (max-width: 450px){
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+    }
+  }
+  .text {
+    @media (max-width: 450px){
+      font-size: 0.9rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,145 @@
+.wrapper {
+  width: 100%;
+  padding-left: 50px;
+  // overflow: visible;
+
+  @media (max-height: 550px) and (min-width: 1024px) {
+    padding-left: 75px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 640px;
+    padding-right: 120px;
+  }
+
+  @media (max-width: 520px) {
+    padding: 0 20px;
+  }
+
+  .container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: visible;
+
+    .sliderWrapper {
+      :global(.slick-next:before,
+      .slick-prev:before) {
+        color: #000;
+      }
+      :global(.center .slick-center .sliderElement) {
+        opacity: 1;
+        transition: all 0.3s;
+        -ms-transform: scale(1.08);
+        transform: scale(1.08);
+      }
+    
+      :global(.slick-list) {
+        transition: all 0.3s;
+        overflow: hidden;
+      }
+
+      :global(.slick-dots) {
+        display: flex !important;
+        flex-direction: row;
+        transform: translate(40%, 80%);
+      }
+  
+      :global(.slick-dots li) {
+        margin: 0 15px;
+      }
+    
+      :global(.slick-dots li::marker) {
+        color: #fff;
+      } 
+    
+      :global(.slick-dots li button) {
+        display: none;
+      }
+    
+      :global(.slick-track) {
+        margin: 0 auto;
+        
+        @media (max-width: 10240px) {
+          position: unset !important;
+        }
+      }
+    
+      :global(.slick-slide img) {
+        display: unset;
+      }
+
+      .slide {
+        position: relative;
+
+        .photo {
+          height: calc(100vh - 130px);
+          object-fit: cover;
+
+          // @media (max-width: 1024px) {
+          //   height: 63vh;
+          // }
+
+          @media (max-width: 1024px) {
+            display: none;
+            height: unset;
+          }
+        }
+  
+        .card {
+          position: absolute;
+          bottom: 0;
+          left: -500px; 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 35px;
+          width: 435px;
+          height: 150px;
+          opacity: 0;
+          background-color: #d7992e;
+
+          @media (max-width: 1024px) {
+            position: unset;
+            opacity: 1;
+          }
+
+          @media (max-width: 520px) {
+            height: 100px;
+          }
+
+          &.thisCard {
+            opacity: 1;
+            left: 0 !important;
+            width: 435px;
+            height: 150px;
+            color: #fff;
+
+
+            @media (max-width: 520px) {
+              height: 100px;
+            }
+          }
+
+          .numbers {
+            font-family: 'Montserrat-Black', Arial, sans-serif;
+            font-size: 3.5rem;
+            line-height: 3.4rem;
+
+            @media (max-width: 520px) {
+              font-size: 2rem;
+              line-height: 2rem;
+            }
+          }
+
+          .description {
+            font-size: 1.7rem;
+
+            @media (max-width: 520px) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

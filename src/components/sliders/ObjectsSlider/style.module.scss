@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  //slick slider restyle
+  :global(.slick-next:before,
+  .slick-prev:before) {
+    display: none;
+    color: #000;
+  }
+
+  :global(.slick-list) {
+    overflow: visible;
+  }
+
+  :global(.slick-track) {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+    :global(.slick-dots) {
+      display: flex !important;
+      flex-direction: row;
+      transform: translate(37%, 80%);
+
+      @media (max-width: 450px){
+      transform: translate(20%, 80%);
+      }
+    }
+
+  :global(.slick-dots li) {
+    margin: 0 15px;
+  }
+
+  :global(.slick-dots li::marker) {
+    color: #fff;
+  } 
+
+  :global(.slick-dots li button) {
+    display: none;
+  }
+
+  @media screen and (min-width: 481px) {
+    :global(.slick-slider) {
+      height: unset;
+      padding-bottom: 80px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    :global(.slick-slider) {
+      height: unset
+    }
+  }
+}

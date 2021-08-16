@@ -1,0 +1,59 @@
+.card {
+  width: 360px;
+  margin: 10px;
+  background-color: #fff;
+
+  @media (max-width: 810px) {
+    display: flex;
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+    width: 360px;
+  }
+
+  .image {
+    width: 100%;
+    height: unset;
+
+    @media (max-width: 810px) {
+        width: 150px;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      height: unset;
+    }
+  }
+
+  .content {
+    padding: 15px;
+
+    .dateWrapper {
+      padding-bottom: 10px;
+  
+      .calendar {
+        margin-right: 10px;
+      }
+
+      .date {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: #8a8787;
+      }
+    }
+  
+    .title {
+      padding-bottom: 15px;
+    }
+  
+    .text {
+      padding-bottom: 15px;
+      font-size: 0.9rem;
+    }
+  }
+}

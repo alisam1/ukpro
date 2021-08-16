@@ -1,0 +1,131 @@
+.container {
+  position: relative;
+  width: 2200px;
+  overflow: hidden;
+
+  @media (max-width: 2560px){
+    width: 1850px;
+  }
+
+  @media (max-width: 2048px){
+    width: 1360px;
+  }
+
+  @media (max-width: 1920px){
+    width: 1230px;
+  }
+
+  @media (max-width: 1280px){
+    width: 700px;
+  }
+
+  @media (max-width: 1200px){
+    width: 650px;
+  }
+
+  @media (max-width: 830px){
+    margin-top: 30px;
+    width: 360px;
+  }
+
+  @media (max-width: 400px){
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .sliderWrapper {
+    :global(.slick-next:before,
+    .slick-prev:before) {
+      color: #000;
+    }
+  
+    :global(.slick-list) {
+      overflow: hidden;
+    }
+    :global(.slick-dots) {
+      display: flex !important;
+      flex-direction: row;
+      transform: translate(37%, 80%);
+
+      @media (max-width: 450px){
+        margin-bottom: 25px;
+        transform: translate(33%, 80%);
+      }
+    }
+
+    :global(.slick-dots li) {
+      margin: 0 15px;
+    }
+  
+    :global(.slick-dots li::marker) {
+      color: rgb(41, 39, 39);
+    } 
+  
+    :global(.slick-dots li button) {
+      display: none;
+    }
+  
+    :global(.slick-track) {
+      // margin: 0 auto;
+      display: flex;
+      // justify-content: flex-start;
+    }
+  
+    :global(.slick-slide) {
+      @media (min-width: 1024px) {
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+        height: 382px;
+        margin-right: 40px;
+      }
+    }
+
+    .card {
+      width: 360px;
+      height: 382px;
+      background-color: #fff;
+
+      @media (max-width: 400px) {
+        width: inherit;
+        height: 425px;
+      }
+    
+      .image {
+        width: 360px;
+        height: 202px;
+      }
+    
+      .content {
+        padding: 10px 15px;
+    
+        .dateWrapper {
+          display: flex;
+          align-items: center;
+          padding-bottom: 5px;
+      
+          .calendar {
+            width: 14px;
+            height: 15px;
+            margin-right: 10px;
+          }
+    
+          .date {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #8a8787;
+          }
+        }
+      
+        .title {
+          padding-bottom: 5px;
+        }
+      
+        .text {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
