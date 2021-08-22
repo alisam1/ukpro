@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import HomePage from "./pages/HomePage"
 import Events from "./pages/Events"
+import SMI from "./pages/SMI"
 import ObjectsPage from "./pages/ObjectsPage"
 
 
@@ -20,6 +21,8 @@ function App() {
                        render={() => <HomePage/>}/>
                  <Route path='/events' exact
                        render={() => <Events/>}/>
+                <Route path='/SMI' exact
+                       render={() => <SMI/>}/>    
                 <Route path='/objects' exact
                        render={() => <ObjectsPage/>}/>
 

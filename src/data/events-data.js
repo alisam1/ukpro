@@ -10,13 +10,15 @@ const eventsData = [
     {
         'Date': new Date(2021, 6, 7), 
         'Events': [
-            {   date: '3 июня 2021',
+            {   id: 1,
+                date: '3 июня 2021',
                 title: 'Москва workshop "MICE&nbsp;Connection 2021"',
                 text: 'Проект основан на результатах тщательно проведенной аналитики существующих...',
                 image: img20210703,
                 link: '/event'
             },
-            {   date: '15-17 июня',
+            {   id: 2,
+                date: '15-17 июня',
                 title: 'ХХ юбилейный Всероссийский форум "Здравница-2021"',
                 text: 'Значение санаторно-курортного...',
                 image: img20210715,
@@ -28,6 +30,7 @@ const eventsData = [
         'Date': new Date(2021, 6, 15), 
         'Events': [
             {
+                id: 3,
                 date: '10 мая 2021',
                 title: 'Выпускной вечер на берегу моря',
                 text: '21 апреля в Москве, на территории отеля InterContinental...',
@@ -39,19 +42,22 @@ const eventsData = [
     {
         'Date': new Date(2021, 6, 20), 
         'Events': [
-            {   date: '26 мая 2021',
+            {   id: 4,
+                date: '26 мая 2021',
                 title: '«UPRO GROUP» на ежегодной конференции от делового издания «Ведомости»',
                 text: '21 апреля в Москве, на территории отеля InterContinental...',
                 image: img20210526,
                 link: '/event'
             },
-            {   date: '14 мая 2021',
+            {   id: 5,
+                date: '14 мая 2021',
                 title: 'Новый проект компании «UPRO GROUP» - отель 4* Новый Берег',
                 text: '21 апреля в Москве, на территории отеля InterContinental...',
                 image: img20210514,
                 link: '/event'
             },
-            {   date: '14 мая 2021',
+            {   id: 6,
+                date: '14 мая 2021',
                 title: 'Новый проект компании «UPRO GROUP» - отель 4* Новый Берег',
                 text: '21 апреля в Москве, на территории отеля InterContinental...',
                 image: img20210514,
