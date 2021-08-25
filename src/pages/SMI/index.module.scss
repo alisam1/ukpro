@@ -6,6 +6,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 7rem;
+
+     @media (max-width: 1024px){
+      width: 100%;
+      margin-top: 4.5rem;
+    }
+
+    @media (max-width: 650px){
+      width: 100%;
+      margin-top: 3rem;
+    }
 }
 
 .container {
@@ -16,6 +26,10 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+
+    @media (max-width: 1024px){
+      flex-direction: column;
+    }
 }
 
 .content {
@@ -28,4 +42,12 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 1024px){
+      top: 1rem;
+    }
+
+     @media (max-width: 650px){
+      top: 0;
+    }
 }
