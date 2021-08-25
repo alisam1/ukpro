@@ -293,9 +293,13 @@ input.input, textarea, select {
   background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-6.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: red;
+  background-position: center;
   margin-bottom: 2rem;
   position: relative;
+
+   @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 
 .wrap-2 {
@@ -305,9 +309,11 @@ input.input, textarea, select {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: yellow;
   margin-bottom: 2rem;
   position: relative;
+  @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 
 .wrap-3 {
@@ -319,6 +325,9 @@ input.input, textarea, select {
   background-position: center;
   margin-bottom: 2rem;
   position: relative;
+  @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 
 .wrap-4 {
@@ -330,6 +339,9 @@ input.input, textarea, select {
   background-position: center;
   margin-bottom: 2rem;
   position: relative;
+  @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 
 .wrap-5 {
@@ -339,9 +351,11 @@ input.input, textarea, select {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: green;
   margin-bottom: 2rem;
   position: relative;
+  @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 .wrap-6 {
   width:30%;
@@ -350,9 +364,11 @@ input.input, textarea, select {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: salmon;
   margin-bottom: 2rem;
   position: relative;
+  @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 
 .wrap-7 {
@@ -362,15 +378,21 @@ input.input, textarea, select {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: grey;
   margin-bottom: 2rem;
   position: relative;
+  @media (max-width: 1024px) {
+     width: 100%;
+   }
 }
 
 /* Tabs */
 
 .react-tabs__tab-list {
     border-bottom: none !important;
+
+    @media (max-width: 650px) {
+      display: flex !important;
+   }
 }
 .react-tabs__tab {
    font-family: 'Montserrat-Bold', Arial, sans-serif !important;
@@ -387,7 +409,13 @@ input.input, textarea, select {
    color: #656565 !important;
    margin-right: 1.5rem !important;
    border-radius: 0 !important;
-
+   @media (max-width: 650px) {
+     padding-top: 0.5rem !important;
+     padding-bottom: 0.5rem !important;
+     padding-left: 1rem !important;
+     padding-right: 1rem !important;
+     margin-right: 0.5rem !important;
+   }
 }
 
 .react-tabs__tab--selected {
