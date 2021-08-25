@@ -275,4 +275,123 @@ input.input, textarea, select {
 .x-tl-booking-widget-7134-container.x-tl-booking-widget-7134-container--pulled-right {
   display: none !important;
 }
+
+/* Cooperation */
+
+.coop-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrap-1 {
+  width: 70%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-6.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.wrap-2 {
+  width: 28%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-7.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: yellow;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.wrap-3 {
+  width:48%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.wrap-4 {
+  width:48%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.wrap-5 {
+  width:30%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.wrap-6 {
+  width:30%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: salmon;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.wrap-7 {
+  width:30%;
+  height: 20rem;
+  background-image: linear-gradient(90deg, #000000 -2.9%, rgba(0, 0, 0, 0) 79.89%), url('/images/cooperation/coop-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* Tabs */
+
+.react-tabs__tab-list {
+    border-bottom: none !important;
+}
+.react-tabs__tab {
+   font-family: 'Montserrat-Bold', Arial, sans-serif !important;
+   font-style: normal;
+   font-weight: bold !important;
+   font-size: 16px !important;
+   line-height: 100%;
+   text-align: center;
+   padding-top: 1.5rem !important;;
+   padding-bottom: 1.5rem !important;;
+   padding-left: 2rem !important;;
+   padding-right: 2rem !important;
+   background: #EBEBEB !important;
+   color: #656565 !important;
+   margin-right: 1.5rem !important;
+   border-radius: 0 !important;
+
+}
+
+.react-tabs__tab--selected {
+    color: #FFFFFF !important;
+    background: #656565 !important;
+}
 // END RODAL RESTYLE

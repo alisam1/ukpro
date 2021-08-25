@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 import HomePage from "./pages/HomePage"
 import Events from "./pages/Events"
 import SMI from "./pages/SMI"
+import Cooperation from "./pages/Cooperation"
 import ObjectsPage from "./pages/ObjectsPage"
 
 
@@ -25,6 +26,8 @@ function App() {
                        render={() => <SMI/>}/>    
                 <Route path='/objects' exact
                        render={() => <ObjectsPage/>}/>
+                <Route path='/cooperation' exact
+                       render={() => <Cooperation/>}/>
 
             </Switch>
 
