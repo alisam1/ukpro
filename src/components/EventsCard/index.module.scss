@@ -13,9 +13,11 @@
     width: 100%;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     display: block;
     width: 360px;
+    max-width: 95%;
+    margin-left: 0; 
   }
 
   .image {

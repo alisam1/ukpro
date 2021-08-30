@@ -4,6 +4,12 @@
     margin: 0 auto;
     margin-top: 4rem;
     padding-bottom: 10rem;
+    @media (max-width: 1024px){
+      margin-top: 2rem;
+    }
+    @media (max-width: 650px){
+      margin-top: -3rem;
+    }
 }
 
 .container {
@@ -14,6 +20,10 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+
+    @media (max-width: 1024px){
+      flex-direction: column;
+    }
 }
 
 .content {
@@ -26,4 +36,8 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 650px){
+      top: 0;
+    }
 }
