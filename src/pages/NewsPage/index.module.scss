@@ -1,0 +1,118 @@
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Montserrat-Black", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.absoluteSection {
+    position: relative;
+    
+    .absoluteTitle {
+        position: absolute;
+        z-index: 500;
+    }
+}
+
+.subtitle {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.servisesWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 960px){
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servisesItem {
+        width: 48%;
+
+        @media (max-width: 960px){
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        .servisesItemTitle {
+            margin-top: 0;
+            text-align: center;
+        }
+    }
+}
+
+.advantagesSection {
+    position: relative;
+
+    .dotsWrapper {
+        position: absolute;
+        top: 20px;
+        right: 15%;
+
+        @media (max-width: 1200px){
+            right: 5%;
+        }
+        @media (max-width: 950px){
+            display: none;
+        }
+    }
+}
+
+.newsSection {
+    position: relative;
+    .newsWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        @media (min-width: 2050px) {
+            width: 1650px;
+        }
+    
+        @media (max-width: 810px) {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+    }
+    
+    .buttonWrapper {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 165px;
+    
+        @media (min-width: 2050px) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(50%);
+            right: 240px;
+            width: 350px;
+        }
+    
+        @media (max-width: 640px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.mapSection {
+    position: relative;
+
+    .formWrapper {
+        position: absolute;
+        top: 54%;
+        right: 140px;
+        transform: translateY(-57%);
+
+        @media (max-width: 720px){
+            position: unset;
+            top: unset;
+            right: unset;
+            transform: unset;
+            padding-top: 15px;
+
+        }
+    }
+}

@@ -26,7 +26,7 @@ const AboutUsCard = ({cards}) => (
                                 )}
                                 {item.hrefName && (
                                 <div className={s.linkWay}>
-                                  <Link to ={`/${item.id}`} target="_blank" rel="noreferrer" className={s.link}></Link>
+                                  <Link to ={`SMI/${item.id}`} target="_blank" rel="noreferrer" className={s.link}></Link>
                                 </div>
                                 )}
                             </div>

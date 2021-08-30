@@ -1,15 +1,20 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { useParams } from 'react-router-dom'
 import s from './index.module.scss'
 import LazyLoadImgComponent from '../LazyLoadImgComponent/LazyLoadImgComponent'
 import calendarImg from '../../images/calendar_icon.svg'
 
-const EventsCard = ({cards}) => (
+const NewsFullCard = ({cards}) => {
+
+    const { id } = useParams();
+
+    return (
     <>
         {
-            cards.map((item, index) => (
+            cards
+            .filter((item) => item.id == id)
+            .map((item, index) => (
                     <article className={s.card} key={index}>
-                        <Link to ={`events/${item.id}`} target="_blank" rel="noreferrer">
                             <LazyLoadImgComponent
                                 className={s.image}
                                 alt={item.title}
@@ -23,13 +28,13 @@ const EventsCard = ({cards}) => (
                                 <h5 className={s.title}>{item.title}</h5>
                                 <p className={s.text}>{item.text}</p>
                             </div>
-                        </Link>
                     </article>
                 )
             )
         }
     </>
-)
+    )
+}
 
-export default EventsCard
+export default NewsFullCard
 
